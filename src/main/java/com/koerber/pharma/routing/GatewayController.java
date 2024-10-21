@@ -1,22 +1,19 @@
 package com.koerber.pharma.routing;
 
-
 import com.koerber.pharma.dto.Patient;
 import com.koerber.pharma.services.GatewayService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/pharma")
 public class GatewayController {
 
-    @Autowired
-    private GatewayService gatewayService;
+    private final GatewayService gatewayService;
+
+    public GatewayController(GatewayService gatewayService) {
+        this.gatewayService = gatewayService;
+    }
 
     @PostMapping("/consults")
     public void creatConsults(){
@@ -29,7 +26,10 @@ public class GatewayController {
     }
 
     @GetMapping("/patients")
-    public List<Patient> getPatients(){
-        return gatewayService.getPatients();
+    public Page<Patient> getPatients(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "10") int size) {
+
+        return gatewayService.getPatients(page, size);
     }
 }
