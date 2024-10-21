@@ -1,0 +1,7 @@
+/Users/miguellopes/Desktop/koeber-pharma/src/main/java/com/koerber/pharma/KoerberPharmaApplication.java
+/Users/miguellopes/Desktop/koeber-pharma/src/main/java/com/koerber/pharma/config/OpenApiConfig.java
+/Users/miguellopes/Desktop/koeber-pharma/src/main/java/com/koerber/pharma/dto/Consult.java
+/Users/miguellopes/Desktop/koeber-pharma/src/main/java/com/koerber/pharma/dto/Patient.java
+/Users/miguellopes/Desktop/koeber-pharma/src/main/java/com/koerber/pharma/infrastructure/PatientRepository.java
+/Users/miguellopes/Desktop/koeber-pharma/src/main/java/com/koerber/pharma/routing/GatewayController.java
+/Users/miguellopes/Desktop/koeber-pharma/src/main/java/com/koerber/pharma/services/GatewayService.java
