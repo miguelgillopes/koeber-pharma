@@ -12,7 +12,6 @@ This project is a WIP RESTful API built with Spring Boot for managing patient re
 - [Database Schema](#database-schema)
 - [API Endpoints](#api-endpoints)
 - [Testing](#testing)
-- [License](#license)
 
 ## Features
 
@@ -22,10 +21,9 @@ This project is a WIP RESTful API built with Spring Boot for managing patient re
 
 ## Technologies Used
 
-- **Java 17**
+- **Java 21**
 - **Spring Boot:** Web, Data JPA, H2 Database
 - **Hibernate:** ORM for interacting with the database
-- **JUnit:** For writing unit tests
 - **Mockito:** For mocking service calls during testing
 - **Maven:** For dependency management and project build
 - **H2 Database:** In-memory database for testing
